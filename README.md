@@ -80,7 +80,7 @@
 
 ## Screenshots & Preview
 
-![Hero Section](public/Screenshots/hero.png)
+![Hero Section](public/Screenshots/hero1.png)
 *Interactive 3D hero section with floating tech logos*
 
 
