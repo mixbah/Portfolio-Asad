@@ -1,5 +1,5 @@
 import React from 'react'
-import TitleHeader from '../components/TItleHeader'
+import TitleHeader from '../components/TitleHeader.jsx'
 import { testimonials } from '../constants'
 import GlowCard from '../components/GlowCard'
 
