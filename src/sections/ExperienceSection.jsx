@@ -1,5 +1,5 @@
 import React from 'react'
-import TitleHeader from '../components/TItleHeader'
+import TitleHeader from '../components/TitleHeader.jsx'
 import { expCards } from '../constants'
 import GlowCard from '../components/GlowCard'
 import gsap from 'gsap'
