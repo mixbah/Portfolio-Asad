@@ -33,13 +33,16 @@ const NavBar = () => {
         return () => document.removeEventListener('mousedown', handleClickOutside);
     }, [profileOpen]);
 
-    const handleSeeProjects = () => {
-        setProfileOpen(false); // Close the profile panel
-        setResumeModalOpen(true); // Open the resume modal
+    // Consolidated function to close all modals and panels
+    const closeAllModals = () => {
+        setProfileOpen(false);
+        setResumeModalOpen(false);
+        setFutureModalOpen(false);
     };
 
-    const handleCloseResumeModal = () => {
-        setResumeModalOpen(false);
+    const handleSeeProjects = () => {
+        setProfileOpen(false);
+        setResumeModalOpen(true);
     };
 
     const handleOpenFuture = (e) => {
@@ -48,30 +51,13 @@ const NavBar = () => {
         setFutureModalOpen(true);
     };
 
+    // Modal close handlers
+    const handleCloseResumeModal = () => {
+        setResumeModalOpen(false);
+    };
+
     const handleCloseFuture = () => {
         setFutureModalOpen(false);
-    };
-
-    // Handle navbar link clicks - close modal and navigate
-    const handleNavLinkClick = (e) => {
-        setResumeModalOpen(false); // Close resume modal
-        setFutureModalOpen(false); // Close future updates modal
-        setProfileOpen(false); // Close profile panel if open
-        // Let the default navigation happen
-    };
-
-    // Handle logo click - close modal and navigate
-    const handleLogoClick = () => {
-        setProfileOpen(false);
-        setResumeModalOpen(false); // Close resume modal
-        setFutureModalOpen(false); // Close future updates modal
-    };
-
-    // Handle contact button click - close modal and navigate
-    const handleContactClick = () => {
-        setResumeModalOpen(false); // Close resume modal
-        setFutureModalOpen(false); // Close future updates modal
-        setProfileOpen(false); // Close profile panel if open
     };
 
   return (
@@ -114,13 +100,13 @@ const NavBar = () => {
                         </div>
                     )}
                 </div>
-                <a href="#hero" className='logo' onClick={handleLogoClick}>Misbah Asad</a>
+                <a href="#hero" className='logo' onClick={closeAllModals}>Misbah Asad</a>
             </div>
             <nav className='desktop'>
             <ul>
                 {navLinks.map(({link,name})=>(
                     <li key={name} className='group'>
-                        <a href={link} onClick={handleNavLinkClick}>
+                        <a href={link} onClick={closeAllModals}>
                             <span>{name}</span>
                             <span className='underline'/>
                         </a>
@@ -130,7 +116,7 @@ const NavBar = () => {
             </ul>
             </nav>
 
-            <a href="#contact" className='contact-btn group' onClick={handleContactClick}>
+            <a href="#contact" className='contact-btn group' onClick={closeAllModals}>
                 <div className='inner'>
                     <span>Contact me</span>
                 </div>
