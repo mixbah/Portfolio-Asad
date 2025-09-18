@@ -11,7 +11,7 @@
 
 ## Live Demo
 
-**[View Live Portfolio →](https://your-portfolio-url.com)**
+**[View Live Portfolio →](https://portfolio-asad-phi.vercel.app)**
 
 *Experience the future of web portfolios with interactive 3D elements and immersive animations.*
 
@@ -344,7 +344,7 @@ MIT License - feel free to use this project for personal and commercial purposes
 
 **Developer:** Mohammad Asad Misbah 
 **Email:** misbah6634@gmail.com  
-**Portfolio:** [Portfolio](https://your-portfolio-url.com)  
+**Portfolio:** [Portfolio](https://portfolio-asad-phi.vercel.app)  
 **LinkedIn:** [misbahasad](https://www.linkedin.com/in/misbahasad/)  
 **GitHub:** [mixbah](https://github.com/mixbah)
 
