@@ -2,7 +2,6 @@ import React from 'react'
 import Hero from './sections/Hero.jsx'
 import ShowCaseSection from './sections/ShowCaseSection.jsx'
 import NavBar from './components/NavBar.jsx'
-import LogoSection from './components/LogoSection.jsx'
 import FeatureCard from './sections/FeatureCard.jsx'
 import ExperienceSection from './sections/ExperienceSection.jsx'
 import Techstack from './sections/Techstack.jsx'
@@ -16,7 +15,6 @@ const App = () => {
     <NavBar />
     <Hero />
     <ShowCaseSection />
-    {/* <LogoSection /> */}
     <FeatureCard />
     <ExperienceSection />
     <Techstack />

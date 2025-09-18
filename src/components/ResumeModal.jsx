@@ -125,7 +125,7 @@ const ResumeModal = ({ isOpen, onClose }) => {
 
             <div className={`w-full h-full ${!pdfLoaded ? 'hidden' : ''}`}>
               <iframe
-                src="public/profile/Mohammads RESUME.pdf"
+                src="src/profile/Mohammads RESUME.pdf"
                 className="w-full h-[70vh] border-0 rounded-xl"
                 title="Resume PDF"
                 onLoad={handlePdfLoad}
