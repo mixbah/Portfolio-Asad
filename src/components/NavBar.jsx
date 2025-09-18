@@ -73,7 +73,7 @@ const NavBar = () => {
                         aria-expanded={profileOpen}
                         onClick={() => setProfileOpen((prev) => !prev)}
                     >
-                        <img src="src/profile/IMG_7460.PNG" alt="Asad Misbah" className="avatar-img" />
+                        <img src="/profile/IMG_7460.PNG" alt="Asad Misbah" className="avatar-img" />
                         <span className="ring" aria-hidden="true" />
                     </button>
                     {profileOpen && (
@@ -81,7 +81,7 @@ const NavBar = () => {
                             <div className="profile-glow" aria-hidden="true" />
                             <div className="profile-content">
                                 <div className="profile-header">
-                                    <img src="src/profile/IMG_7460.PNG" alt="Profile" className="panel-avatar" />
+                                    <img src="/profile/IMG_7460.PNG" alt="Profile" className="panel-avatar" />
                                     <div>
                                         <p className="name">Asad Misbah</p>
                                         <p className="tag">Student<br/>Developer<br/>Problem Solver</p>
