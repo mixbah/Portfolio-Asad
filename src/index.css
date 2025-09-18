@@ -138,21 +138,20 @@ section {
     }
 
     .profile-panel {
-      @apply absolute top-12 left-0 md:-left-2 w-100 md:w-90 rounded-2xl border shadow-xl overflow-hidden z-[200];
+      @apply absolute top-14 left-0 md:-left-3 w-90 md:w-80 rounded-lg border shadow-2xl overflow-hidden z-[100];
       animation: panelIn 200ms ease forwards;
       background: rgba(0, 0, 0, 0.35);
       border-color: rgba(255, 255, 255, 0.12);
       backdrop-filter: blur(12px) saturate(120%);
-      -webkit-backdrop-filter: blur(12px) saturate(120%);
+      /* -webkit-backdrop-filter: blur(12px) saturate(120%); */
     }
 
     .profile-glow {
-      @apply absolute -inset-1 rounded-2xl;
+      @apply absolute rounded-lg;
       background: radial-gradient(600px 80px at 20% -10%, rgba(98,224,255,0.12), transparent 60%),
         radial-gradient(400px 60px at 80% 120%, rgba(253,92,121,0.10), transparent 60%);
       filter: blur(6px);
-      pointer-events: none;
-      z-index: 0;
+      z-index: -100;
     }
 
     .profile-content {
@@ -164,7 +163,7 @@ section {
     }
 
     .panel-avatar {
-      @apply size-50 rounded-full border border-black-50 object-cover;
+      @apply size-40 rounded-full border border-black-50 object-cover;
     }
 
     .name {
@@ -174,7 +173,7 @@ section {
 
     .tag {
       @apply text-sm;
-      color: rgba(255,255,255,0.9);
+      color: rgba(132, 147, 173, 0.9);
       text-shadow: 0 1px 1px rgba(0,0,0,0.45);
     }
 
@@ -236,7 +235,7 @@ section {
     background: rgba(0, 0, 0, 0.35);
     border-color: rgba(255, 255, 255, 0.12);
     backdrop-filter: blur(12px) saturate(120%);
-    -webkit-backdrop-filter: blur(12px) saturate(120%);
+    /* -webkit-backdrop-filter: blur(12px) saturate(120%); */
     border: 1px solid rgba(255, 255, 255, 0.12);
     border-radius: 24px;
     box-shadow: 
@@ -247,7 +246,7 @@ section {
   }
   
   .resume-modal-glow {
-    position: absolute;
+    position: relative;
     top: -4px;
     left: -4px;
     right: -4px;
@@ -257,16 +256,16 @@ section {
       radial-gradient(400px 60px at 80% 120%, rgba(253,92,121,0.10), transparent 60%);
     filter: blur(6px);
     pointer-events: none;
-    z-index: 0;
+    z-index: -100;
   }
   
   .resume-content {
     background: rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(8px) saturate(110%);
-    -webkit-backdrop-filter: blur(8px) saturate(110%);
+    /* -webkit-backdrop-filter: blur(8px) saturate(110%); */
     border: 1px solid rgba(255, 255, 255, 0.08);
     position: relative;
-    z-index: 1;
+    z-index: -100;
   }
   
   /* PDF Container Styling */

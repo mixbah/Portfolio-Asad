@@ -51,14 +51,6 @@ const NavBar = () => {
         setFutureModalOpen(true);
     };
 
-    // Modal close handlers
-    const handleCloseResumeModal = () => {
-        setResumeModalOpen(false);
-    };
-
-    const handleCloseFuture = () => {
-        setFutureModalOpen(false);
-    };
 
   return (
     <>
@@ -74,11 +66,11 @@ const NavBar = () => {
                         onClick={() => setProfileOpen((prev) => !prev)}
                     >
                         <img src="/profile/IMG_7460.PNG" alt="Asad Misbah" className="avatar-img" />
-                        <span className="ring" aria-hidden="true" />
+                        <span className="ring" />
                     </button>
                     {profileOpen && (
                         <div className="profile-panel" role="dialog" aria-label="Profile quick view">
-                            <div className="profile-glow" aria-hidden="true" />
+                            <div className="profile-glow" />
                             <div className="profile-content">
                                 <div className="profile-header">
                                     <img src="/profile/IMG_7460.PNG" alt="Profile" className="panel-avatar" />
@@ -127,12 +119,16 @@ const NavBar = () => {
     {/* Resume Modal */}
     <ResumeModal 
         isOpen={resumeModalOpen} 
-        onClose={handleCloseResumeModal} 
+        onClose={() => {
+        setResumeModalOpen(false);
+        }} 
     />
     {/* Future Updates Modal */}
     <FutureUpdate 
         isOpen={futureModalOpen}
-        onClose={handleCloseFuture}
+        onClose={() => {
+        setFutureModalOpen(false);
+    }}
     />
     </>
   )
