@@ -97,7 +97,7 @@ useEffect(() => {
 
             <div className={`w-full h-full ${!pdfLoaded ? 'hidden' : ''}`}>
               <iframe
-                src="/profile/Mohammads RESUME.pdf#zoom=100"
+                src="/profile/Resumeforportfolio.pdf"
                 className="w-full h-[70vh] border-0 rounded-xl"
                 title="Resume PDF"
                 onLoad={handlePdfLoad}

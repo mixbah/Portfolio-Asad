@@ -2,10 +2,10 @@ import React, { useEffect } from 'react'
 import GlowCard from './GlowCard'
 
 const items = [
-  { title: 'PDF Support', review: 'Resume PDF Support for Modiles and Tablets', eta: 'Sept 2025' },
+  { title: 'Header Issue Fix', review: 'Update for the header CSS property issue', eta: 'Sept 2025' },
+  { title: 'Misbot', review: 'Updation of gemini integrated chatbot with interactive UI in Work Section', eta: 'Oct 2025' },
   { title: 'BotVIEW', review: 'Highly Functional and Responsive AI Interview Platform with a Support of Voice Agent.', eta: 'Oct 2025' },
   { title: 'Portfolio Revamp V2.0', review: 'Accessibility pass, content refresh, performance tweaks and Theme Switch Functionality.', eta: 'Nov 2025' },
-  { title: 'Backend Playground', review: 'Node/Express APIs, auth, rate limiting, deploy + docs.', eta: 'Dec 2025' },
   { title: 'Problem Solving Archive', review: 'Daily DSA patterns, summaries, and visuals.', eta: 'Weekly' },
   { title: 'Learning Track', review: 'Advanced React, Three JS [GSAP,DREI], system design and Large Language Models.', eta: 'Ongoing' },
 ]
